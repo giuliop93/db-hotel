@@ -10,7 +10,7 @@ identità
 3. Seleziona tutti gli ospiti che hanno più di 20 anni (al momento
 dell’esecuzione della query)
 
-    
+
 
 4. Seleziona tutti gli ospiti il cui nome inizia con la D
 
@@ -30,7 +30,7 @@ dell’esecuzione della query)
 
 8. Quanti paganti sono anche ospiti?
 
-    SELECT * FROM 'paganti' WHERE 'ospite_id' >= 'NULL'
+    SELECT * FROM `paganti` WHERE 'ospite_id' >= 'NULL'
 
 9. Quanti posti letto ha l’hotel in totale?
 
