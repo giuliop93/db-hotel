@@ -1,0 +1,18 @@
+1. Conta gli ospiti raggruppandoli per anno di nascita
+
+
+
+2. Somma i prezzi dei pagamenti raggruppandoli per status
+
+    SELECT "status" SUM ("price")
+    FROM "pagamenti"
+    GROUP BY "status"
+
+3. Conta quante volte è stata prenotata ogni stanza
+
+    SELECT * `stanza_id`, COUNT("id") as "prenotazioni_totali" FROM GROUP BY `ospite_id`
+
+4. Fai un'analisi per vedere se ci sono ore in cui le prenotazioni sono più frequenti
+
+    SELECT HOUR("created-at") as "ora", COUNT("id") as "prenotazioni"
+    FROM "prenotazioni" GROUP BY "ora"
