@@ -16,3 +16,10 @@
 
     SELECT HOUR("created-at") as "ora", COUNT("id") as "prenotazioni"
     FROM "prenotazioni" GROUP BY "ora"
+
+5. Quante prenotazioni ha fatto l'ospite che ha fatto più prenotazioni
+
+    SELECT "ospite_id", COUNT(*) as "prenotazioni"
+    FROM "prenotazioni_has_ospiti"
+    GROUP BY  "prenotazioni" DESC
+    LIMIT 1
